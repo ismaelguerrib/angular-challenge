@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
@@ -22,7 +23,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let gameConsole of gameConsoles">
+            <tr *ngfor="let gameConsole of gameConsoles">
               <td>{{ gameConsole.name }}</td>
               <td>{{ gameConsole.sales2017 | number }}</td>
               <td>{{ gameConsole.sales2018 | number }}</td>
@@ -37,7 +38,7 @@
 </div>
 
 <!-- Display only : Do not edit below -->
-<div class class="section">
+<div class="section">
   <div class="columns">
     <div class="column is-6">
       <div class="card">
@@ -53,7 +54,7 @@
       <div class="card">
         <div class="card-content">
           <p class="title">
-            La console la plus vendue entre 2017 et 2018 est la
+            La console la moins vendue entre 2017 et 2018 est la
             {{ lessSoldGameConsole ? lessSoldGameConsole.name : '-' }}
           </p>
         </div>
