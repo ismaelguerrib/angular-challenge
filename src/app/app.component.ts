@@ -9,11 +9,14 @@ import { GameConsoleService } from './services/game-console.service'
 })
 export class AppComponent {
   title = 'Angular Challenge'
-  timesMoreFun = 2 + 2
+  timesMoreFun = 4
 
   gameConsoles: GameConsole[] = this.gameConsoleService.list()
   mostSoldGameConsole: GameConsole
   lessSoldGameConsole: GameConsole
 
-  constructor(private gameConsoleService: GameConsoleService) { }
+
+  constructor(private gameConsoleService: GameConsoleService) {
+    console.log(this.gameConsoles)
+  }
 }
